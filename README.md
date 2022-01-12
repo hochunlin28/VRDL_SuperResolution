@@ -11,7 +11,6 @@ pip install
 
 ## Data Preparation
 * I use matlab to run the data/generate_train.m. Therefore, it will generate train.h5 dataset. Please put it in data/ directory.
-* train.h5 is in [GoogleDrive]()
 
 ## Training
 * I use VDSR to run this homework.
