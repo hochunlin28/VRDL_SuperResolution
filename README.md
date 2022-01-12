@@ -9,6 +9,8 @@ pip install pillow==6.1
 pip install scipy==1.2.1
 pip install matplotlib
 pip install opencv-python
+pip install numpy==1.13.3
+pip install opencv-python
 
 ```
 
