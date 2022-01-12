@@ -5,7 +5,10 @@
 
 * install packages
 ```
-pip install
+pip install pillow==6.1
+pip install scipy==1.2.1
+pip install matplotlib
+pip install opencv-python
 
 ```
 
