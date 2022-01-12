@@ -5,13 +5,17 @@
 
 * install packages
 ```
-pip install
+pip install pillow==6.1
+pip install scipy==1.2.1
+pip install matplotlib
+pip install opencv-python
+pip install numpy==1.13.3
+pip install opencv-python
 
 ```
 
 ## Data Preparation
 * I use matlab to run the data/generate_train.m. Therefore, it will generate train.h5 dataset. Please put it in data/ directory.
-* train.h5 is in [GoogleDrive]()
 
 ## Training
 * I use VDSR to run this homework.
@@ -19,8 +23,10 @@ pip install
 python main_vdsr.py --cuda --gpus 0 --nEpochs 30 --lr 0.01
 ```
 
-## download pretrainted model
+## Download Pretrainted Model
 * After we train, it will produce .pth file in checkpoint/. Please put .pth file in checkpoint/ directory. [download pretrainted model](https://drive.google.com/file/d/1TLKZehRFBav7pvuUL6kSLTtFzxGIqd3t/view?usp=sharing)
+
+## Image Preprocessing
 * Before executing inference.py, I convert the low resolution testing image as three times bigger than these and save in test/ directory. (e.g 100 * 100 -> 300 * 300)
 * I do this for you, so just goto inference part
 
@@ -33,3 +39,5 @@ python resize_image.py
 ```
 python inference.py --model checkpoint/model_final.pth --scale 3
 ```
+## Submission
+* I get PSNR 27.5318 in this project.
