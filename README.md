@@ -18,8 +18,10 @@ pip install
 python main_vdsr.py --cuda --gpus 0 --nEpochs 30 --lr 0.01
 ```
 
-## download pretrainted model
+## Download Pretrainted Model
 * After we train, it will produce .pth file in checkpoint/. Please put .pth file in checkpoint/ directory. [download pretrainted model](https://drive.google.com/file/d/1TLKZehRFBav7pvuUL6kSLTtFzxGIqd3t/view?usp=sharing)
+
+## Image Preprocessing
 * Before executing inference.py, I convert the low resolution testing image as three times bigger than these and save in test/ directory. (e.g 100 * 100 -> 300 * 300)
 * I do this for you, so just goto inference part
 
