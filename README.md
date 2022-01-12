@@ -33,3 +33,5 @@ python resize_image.py
 ```
 python inference.py --model checkpoint/model_final.pth --scale 3
 ```
+## Submission
+* I get PSNR 27.5318 in this project.
